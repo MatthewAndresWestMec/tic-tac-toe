@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./tictactoe.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Tic-Tac-Toe</h1>
+
+    <h2><span>Current Player:<span id="currentturn">X</span></h2>
+    <h4><span>Turn:<span id="cturn">0</span></h4>
+    <div id="container">
+
+        <!-- ROW 1-->
+        <button onclick="b1();turn();win()" id="b1" class="b1"></button>
+
+        <button onclick="b2();turn();win()" id="b2" class="b2"></button>
+
+        <button onclick="b3();turn();win()" id="b3" class="b3"></button>
+
+        <!-- ROW 2-->
+        <button onclick="b4();turn();win()" id="b4" class="b4"></button>
+
+        <button onclick="b5();turn();win()" id="b5" class="b5"></button>
+
+        <button onclick="b6();turn();win()" id="b6" class="b6"></button>
+
+        <!-- ROW 3-->
+        <button onclick="b7();turn();win()" id="b7" class="b7"></button>
+
+        <button onclick="b8();turn();win()" id="b8" class="b8"></button>
+
+        <button onclick="b9();turn();win()" id="b9" class="b9"></button>
+
+        <button onclick="refresh()" id="b10" class="b10">Refresh</button>
+    </div>
+    <p>Score</p>
+    <p>X:<span id="xscore">0</span> O:<span id="oscore">0</span></p>
+    <br>
+    <p id="whowon"></p>
+    <script src="tictactoe.js"></script>
+</body>
+
+</html>
